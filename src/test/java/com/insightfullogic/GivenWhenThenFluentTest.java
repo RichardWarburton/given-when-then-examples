@@ -24,9 +24,9 @@ public class GivenWhenThenFluentTest {{
             cafe.serveCoffee();
 
             Then:
-            assertFalse(cafe.canServeCoffee());
+            expect.that(cafe.canServeCoffee()).is(false);
         });
 
     });
-    
+
 }}
